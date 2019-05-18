@@ -12,6 +12,7 @@ export default [
         name: 'register.result',
         component: './User/RegisterResult',
       },
+
       {
         component: '404',
       },
@@ -23,8 +24,13 @@ export default [
     component: '../layouts/BasicLayout',
     Routes: ['src/pages/Authorized'],
     routes: [
+      {
+        path: '/test1',
+        name: 'test1',
+        component: './Test/test1',
+      },
       // dashboard
-      { path: '/', redirect: '/dashboard/analysis', authority: ['admin', 'user'] },
+      { path: '/', redirect: '/test1', authority: ['admin', 'user'] },
       {
         path: '/dashboard',
         name: 'dashboard',
