@@ -59,7 +59,7 @@ class Editor extends Component {
       const editorValue = this.editor.getValue();
 
       // Always refer to the latest value
-      console.log(editorValue, event);
+      // console.log(editorValue, event);
       onChange(editorValue, event);
     });
   }

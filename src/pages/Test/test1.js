@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Editor from '@/components/MonacoEditor';
+import Editor from '@/components/MonacoEditor/EditorWithLanguageSelect';
 
 class Test1 extends Component {
   state = {
